@@ -1,0 +1,22 @@
+name: Upload snap to packagecloud.io
+on: 
+  push:
+    tags: 
+    - '[0-9a-z]*'
+
+jobs:
+  package:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - name: [push tag event] Dump some info
+        run: |
+          echo push tag event
+          echo GITHUB env
+          env | grep GITHUB
+          echo ===========================================
+          echo git branch
+          git branch
+          echo ===========================================
+          echo git tag
+          git tag
