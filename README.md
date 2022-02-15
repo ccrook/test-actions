@@ -210,3 +210,57 @@ git branch
 ===========================================
 git tag
 ```
+
+## Added readme, tag3, created pull request.  
+
+Events for push and push --tag as before.
+
+```
+
+Run echo pull request branch event
+  echo pull request branch event
+  echo GITHUB env
+  env | grep GITHUB
+  echo ===========================================
+  echo git branch 
+  git branch --list
+  echo ===========================================
+  echo git tag
+  git tag --list
+  shell: /usr/bin/bash -e {0}
+pull request branch event
+GITHUB env
+GITHUB_WORKSPACE=/home/runner/work/test-actions/test-actions
+GITHUB_PATH=/home/runner/work/_temp/_runner_file_commands/add_path_76858303-1ec4-4db1-94ea-fd6133d5d288
+GITHUB_ACTION=__run
+GITHUB_RUN_NUMBER=2
+GITHUB_REF_TYPE=branch
+GITHUB_ACTIONS=true
+GITHUB_SHA=2d06791de61852177c772ddb83339327ff9c6e92
+GITHUB_REF=refs/pull/1/merge
+GITHUB_REF_PROTECTED=false
+GITHUB_API_URL=https://api.github.com
+GITHUB_ENV=/home/runner/work/_temp/_runner_file_commands/set_env_76858303-1ec4-4db1-94ea-fd6133d5d288
+GITHUB_EVENT_PATH=/home/runner/work/_temp/_github_workflow/event.json
+GITHUB_EVENT_NAME=pull_request
+GITHUB_RUN_ID=1849287820
+GITHUB_ACTOR=ccrook
+GITHUB_RUN_ATTEMPT=1
+GITHUB_GRAPHQL_URL=https://api.github.com/graphql
+GITHUB_SERVER_URL=https://github.com
+GITHUB_REF_NAME=1/merge
+GITHUB_JOB=package
+GITHUB_REPOSITORY=ccrook/test-actions
+GITHUB_RETENTION_DAYS=90
+GITHUB_ACTION_REPOSITORY=
+GITHUB_BASE_REF=main
+GITHUB_REPOSITORY_OWNER=ccrook
+GITHUB_HEAD_REF=test
+GITHUB_ACTION_REF=
+GITHUB_WORKFLOW=Upload snap to packagecloud.io
+===========================================
+git branch
+* (HEAD detached at pull/1/merge)
+===========================================
+git tag
+```
