@@ -15,8 +15,8 @@ jobs:
           echo GITHUB env
           env | grep GITHUB
           echo ===========================================
-          echo git branch
-          git branch
+          echo git branch 
+          git branch --list
           echo ===========================================
           echo git tag
-          git tag
+          git tag --list

@@ -15,9 +15,9 @@ jobs:
           echo GITHUB env
           env | grep GITHUB
           echo ===========================================
-          echo git branch
-          git branch
-          git 
-          if [[ "$GITHUB_REF_NAME" =~ "-test" ]]; then
-             echo "PACKAGECLOUD_REPOSITORY=dev" >> $GITHUB_ENV; 
-          fi
+          echo git branch 
+          git branch --list
+          echo ===========================================
+          echo git tag
+          git tag --list
+
