@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.4.0
-      - name: [push event] Dump some info
+      - name: '[push event] Dump some info'
         run: |
           echo push branch event
           echo GITHUB env
