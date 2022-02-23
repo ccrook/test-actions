@@ -22,6 +22,7 @@ jobs:
       - name: Document target repository
         run: |
           echo "Cloud repo: $PACKAGECLOUD_REPOSITORY"
-          env
+      - uses: ubuntu:20.04
         with:
+          entrypoint: /usr/bin/env
           repo: ${{ env.PACKAGECLOUD_REPOSITORY }}
