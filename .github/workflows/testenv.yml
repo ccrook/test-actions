@@ -22,3 +22,6 @@ jobs:
       - name: Document target repository
         run: |
           echo "Cloud repo: $PACKAGECLOUD_REPOSITORY"
+          env
+        with:
+          repo: ${{ env.PACKAGECLOUD_REPOSITORY }}
